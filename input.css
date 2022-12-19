@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.wave-divider-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave-divider-top svg {
+  position: relative;
+  display: block;
+  width: calc(200% + 1.3px);
+  height: 150px;
+}
+
+.wave-divider-top .shape-fill {
+  fill: #ffffff;
+}
+
+.wave-divider-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave-divider-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(208% + 1.3px);
+    height: 76px;
+    transform: rotateY(180deg);
+}
+
+.wave-divider-bottom .shape-fill {
+    fill: #FFFFFF;
+}

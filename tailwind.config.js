@@ -15,7 +15,8 @@ module.exports = {
       colors: {
         primary: 'hsl(19, 20%, 19%)',
         primaryHover: 'hsl(21, 100%, 50%)',
-        primaryLight: 'hsl(20, 43%, 62%)'
+        primaryLight: 'hsl(20, 43%, 62%)',
+        primaryBright: 'hsl(20, 100%, 60%)'
       }
     },
   },

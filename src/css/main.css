@@ -559,20 +559,12 @@ video {
   margin-top: 2.5rem;
 }
 
-.mb-32 {
-  margin-bottom: 8rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
 .mb-4 {
   margin-bottom: 1rem;
 }
 
-.mt-32 {
-  margin-top: 8rem;
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .mt-24 {
@@ -631,10 +623,10 @@ video {
   justify-content: space-between;
 }
 
-.space-x-6 > :not([hidden]) ~ :not([hidden]) {
+.space-x-3 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
-  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {
@@ -687,14 +679,29 @@ video {
   border-radius: 0.5rem;
 }
 
-.bg-primaryLight {
+.bg-primaryBright {
   --tw-bg-opacity: 1;
-  background-color: hsl(20 43% 62% / var(--tw-bg-opacity));
+  background-color: hsl(20 100% 60% / var(--tw-bg-opacity));
 }
 
 .bg-primary {
   --tw-bg-opacity: 1;
   background-color: hsl(19 20% 19% / var(--tw-bg-opacity));
+}
+
+.bg-gray-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
 .p-3 {
@@ -727,6 +734,14 @@ video {
 
 .pt-2 {
   padding-top: 0.5rem;
+}
+
+.pt-32 {
+  padding-top: 8rem;
+}
+
+.pb-32 {
+  padding-bottom: 8rem;
 }
 
 .text-center {
@@ -772,9 +787,61 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.wave-divider-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave-divider-top svg {
+  position: relative;
+  display: block;
+  width: calc(200% + 1.3px);
+  height: 150px;
+}
+
+.wave-divider-top .shape-fill {
+  fill: #ffffff;
+}
+
+.wave-divider-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave-divider-bottom svg {
+  position: relative;
+  display: block;
+  width: calc(208% + 1.3px);
+  height: 76px;
+  transform: rotateY(180deg);
+}
+
+.wave-divider-bottom .shape-fill {
+  fill: #FFFFFF;
+}
+
+.hover\:bg-primary:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(19 20% 19% / var(--tw-bg-opacity));
+}
+
 .hover\:bg-primaryHover:hover {
   --tw-bg-opacity: 1;
   background-color: hsl(21 100% 50% / var(--tw-bg-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px) {
