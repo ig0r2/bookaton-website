@@ -19,7 +19,7 @@
 }
 
 .wave-divider-top .shape-fill {
-  fill: #ffffff;
+  fill: theme("colors.gray.200");
 }
 
 .wave-divider-bottom {
@@ -41,7 +41,7 @@
 }
 
 .wave-divider-bottom .shape-fill {
-    fill: #FFFFFF;
+    fill: theme("colors.white");
 }
 
 @keyframes fadeIn {
