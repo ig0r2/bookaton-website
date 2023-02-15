@@ -1,7 +1,11 @@
 let slideshow = document.querySelector('#slideshow');
 let images = [
-    'https://cdn.discordapp.com/attachments/750356632403181569/1071855854132928602/IMG-20230205-WA0024.jpg',
-    'https://cdn.discordapp.com/attachments/750356632403181569/1074305108147437681/1676204681277.jpg'];
+    './src/images/books01.jpg',
+    './src/images/books02.jpg',
+    './src/images/books03.jpg',
+    './src/images/books05.jpg',
+    './src/images/books06.jpg',
+    './src/images/books07.jpg',];
 let slideIndex = 1;
 
 setInterval(() => {
@@ -16,7 +20,7 @@ setInterval(() => {
     setTimeout(() => {
         fadeIn(slideshow);
     }, 525 + 200);
-}, 4000);
+}, 5000);
 
 function fadeOut(el) {
     el.style.animation = 'fadeOut 0.5s ease-in forwards';
