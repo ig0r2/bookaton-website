@@ -583,6 +583,10 @@ video {
   margin-top: 1.25rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -597,10 +601,6 @@ video {
 
 .-mt-14 {
   margin-top: -3.5rem;
-}
-
-.mt-2 {
-  margin-top: 0.5rem;
 }
 
 .flex {
@@ -826,6 +826,12 @@ video {
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.shadow-\[0em_0\.1em_0\.75em_0\.1em_gray\] {
+  --tw-shadow: 0em 0.1em 0.75em 0.1em gray;
+  --tw-shadow-colored: 0em 0.1em 0.75em 0.1em var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .ease-in {
