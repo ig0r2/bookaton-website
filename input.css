@@ -2,6 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  a {
+    @apply text-blue-500 hover:text-blue-600;
+  }
+}
+
+@layer components {
+  .doc-title {
+    @apply pt-20 mb-5 text-2xl font-bold;
+  }
+  .doc-img {
+    @apply my-6 rounded-lg;
+  }
+  .doc-code {
+    @apply rounded-md bg-slate-300 px-2 py-0.5;
+  }
+  .doc-list {
+    @apply list-disc;
+  }
+  .doc-list li {
+    @apply mb-2;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 .wave-divider-top {
   position: absolute;
   top: 0;

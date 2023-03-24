@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookaton</title>
+    <link rel="stylesheet" href=".././src/css/main.css?ver=1.2" />
+    <base href="../" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="sticky top-0 left-0 z-50 mx-auto w-full bg-primaryBright p-3 px-6 shadow-[0em_0.1em_0.75em_0.1em_gray]">
+      <div class="flex items-center justify-between">
+        <a href="https://pmf.ni.ac.rs" class="w-40 pt-2">
+          <img
+            src="https://www.pmf.ni.ac.rs/wp-content/uploads/2022/03/pmf_logo3-1-LAT.svg"
+            alt="logo" />
+        </a>
+        <div class="hidden space-x-3 md:flex">
+          <a
+            href="/"
+            class="rounded-full p-3 px-6 text-black underline-offset-4 hover:text-white"
+            >Početna</a
+          >
+          <a
+            href="uputstvo/"
+            class="rounded-full p-3 px-6 text-black underline underline-offset-4 hover:text-white"
+            >Uputstvo</a
+          >
+        </div>
+        <a
+          href="https://forms.gle/eaGyoc1qka4NoAme6"
+          target="_blank"
+          class="baseline rounded-full bg-primary p-3 px-6 text-white hover:bg-primaryHover hover:text-white"
+          >Prijavi se</a
+        >
+      </div>
+      <div class="flex items-center justify-center md:hidden">
+        <a
+          href="/"
+          class="rounded-full p-3 px-6 text-black underline-offset-4 hover:text-white"
+          >Početna</a
+        >
+        <a
+          href="uputstvo/"
+          class="rounded-full p-3 px-6 text-black underline underline-offset-4 hover:text-white"
+          >Uputstvo</a
+        >
+      </div>
+    </nav>
+    <section>
+      <div class="container mx-auto p-6">
+        <h1 class="mb-10 text-center text-3xl font-bold">Uputstvo</h1>
+        <!-- Sadrzaj -->
+        <div>
+          <p class="text-lg">Sadržaj</p>
+          <p>
+            <a href="uputstvo/#h-github" class="text-blue-500"
+              >Pravljenje naloga na GitHub-u</a
+            >
+          </p>
+          <p>
+            <a href="uputstvo/#h-stranice" class="text-blue-500"
+              >Odabir stranica</a
+            >
+          </p>
+          <p>
+            <a href="uputstvo/#h-kucanje" class="text-blue-500"
+              >Kucanje teksta</a
+            >
+          </p>
+          <p>
+            <a href="uputstvo/#h-latex" class="text-blue-500"
+              >Kucanje u LaTeX-u</a
+            >
+          </p>
+          <p>
+            <a href="uputstvo/#h-postavljanje" class="text-blue-500"
+              >Postavljanje otkucanog teksta</a
+            >
+          </p>
+        </div>
+        <!-- Pravljenje naloga na GitHub-u -->
+        <h1 id="h-github" class="doc-title">Pravljenje naloga na GitHub-u</h1>
+        <ul class="doc-list">
+          <li>
+            <p>
+              Idite na sledeći link:
+              <a href="https://github.com" target="_blank" class=""
+                >github.com</a
+              >
+            </p>
+          </li>
+          <li>
+            <p>Ako već imate napravljen nalog, ulogujte se.</p>
+            <p>
+              U suprotnom napravite nalog pomoću dugmeta
+              <code class="doc-code">Sign up</code> u gornjem desnom uglu
+            </p>
+          </li>
+        </ul>
+        <!-- Odabir stranica -->
+        <h1 id="h-stranice" class="doc-title">Odabir stranica</h1>
+        <ul class="doc-list">
+          <li>
+            <p>
+              Idite na sledeći link:
+              <a
+                href="https://github.com/dimchee/ZDSSMO"
+                target="_blank"
+                class=""
+                >https://github.com/dimchee/ZDSSMO</a
+              >
+            </p>
+          </li>
+          <li>
+            <p>
+              Delovi knjige se nalaze na
+              <a href="https://github.com/dimchee/ZDSSMO/issues"
+                ><code class="doc-code">Issues</code></a
+              >
+              stranici.
+            </p>
+          </li>
+          <li>
+            <p>
+              Odaberite bilo koji
+              <code class="doc-code">Issue</code> sa Issues stranice koji nije
+              <code class="doc-code">Assign</code>-ovan (dodeljen) nikome, to
+              možete videti u koloni <code class="doc-code">Assignee</code> sa
+              desne strane
+            </p>
+          </li>
+          <li>
+            <p>
+              Odaberite opciju
+              <code class="doc-code">Assigned to nobody</code> kako biste videli
+              samo one koji nisu dodeljeni nikome
+            </p>
+            <div>
+              <img
+                src="./src/images/uputstvo/uputstvo-github-01.png"
+                alt=""
+                class="doc-img" />
+            </div>
+          </li>
+          <li>
+            <p>
+              Kako biste videli stranice po redu poredjane izaberite opciju za
+              sortiranje od najstarijeg
+              <code class="doc-code">Sort by Oldest</code> iz menija
+              <code class="doc-code">Sort</code>
+            </p>
+            <div>
+              <img
+                src="./src/images/uputstvo/uputstvo-github-02.png"
+                alt=""
+                class="doc-img" />
+            </div>
+          </li>
+          <li>
+            <p>
+              Odaberite neki <code class="doc-code">Issue</code> i kliknite na
+              njega
+            </p>
+          </li>
+          <li>
+            <p>
+              Da biste dodelili stranice sebi, postavite komentar
+              <code class="doc-code">Assign me</code>
+            </p>
+            <div>
+              <img
+                src="./src/images/uputstvo/uputstvo-github-03.png"
+                alt=""
+                class="doc-img" />
+            </div>
+          </li>
+          <li>
+            <p>
+              Sačekajte da se sa desne strane u delu
+              <code class="doc-code">Assignees</code> pojavi vaše korisničko ime
+            </p>
+          </li>
+          <li>
+            <p>
+              Kliknite na link
+              <code class="doc-code">Zadate stranice</code> kako biste videli
+              stranice koje ste dodelili sebi
+            </p>
+            <div>
+              <img
+                src="./src/images/uputstvo/uputstvo-github-04.png"
+                alt=""
+                class="doc-img" />
+            </div>
+          </li>
+          <li>
+            <p>
+              Ukoliko gledate stranice na github-u, obratite pažnju na dugme
+              <code class="doc-code">More pages</code> na dnu, koje vam
+              omogućava da vidite sve stranice
+            </p>
+            <div>
+              <img
+                src="./src/images/uputstvo/uputstvo-github-06.png"
+                alt=""
+                class="doc-img" />
+            </div>
+          </li>
+          <li>
+            <p>
+              Obaveštenja možete isključiti u gornjem meniju:
+              <code class="doc-code">Watch > Ignore</code>
+            </p>
+            <div>
+              <img
+                src="./src/images/uputstvo/uputstvo-github-05.png"
+                alt=""
+                class="doc-img" />
+            </div>
+          </li>
+        </ul>
+        <!-- Kucanje teksta -->
+        <h1 id="h-kucanje" class="doc-title">Kucanje teksta</h1>
+        <ul class="doc-list">
+          <li>
+            <p>
+              Moze se koristiti bilo koji LaTeX editor, ali je najlakši za
+              upotrebu
+              <a href="https://www.overleaf.com/" target="_blank">Overleaf</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              Otvorite profil na
+              <a href="https://www.overleaf.com/" target="_blank">Overleaf-u</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              Uđite u ovaj
+              <a
+                href="https://www.overleaf.com/read/yzxzjbfjcxjx"
+                target="_blank"
+                >Template</a
+              >
+              i iskopirajte projekat:
+              <code class="doc-code">Menu > Copy Project</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              Ako već imate napravljen projekat ili ako radite u nekom drugom
+              LaTeX editoru, možete jednostavno iskopirati ceo kod sa stranice.
+            </p>
+          </li>
+          <div>
+            <img
+              src="./src/images/uputstvo/uputstvo-overleaf-01.png"
+              alt=""
+              class="doc-img" />
+          </div>
+          <div>
+            <img
+              src="./src/images/uputstvo/uputstvo-overleaf-02.png"
+              alt=""
+              class="doc-img" />
+          </div>
+          <div>
+            <img
+              src="./src/images/uputstvo/uputstvo-overleaf-03.png"
+              alt=""
+              class="doc-img" />
+          </div>
+        </ul>
+        <!-- Kucanje u LaTeX-u -->
+        <h1 id="h-latex" class="doc-title">Kucanje u LaTeX-u</h1>
+        <ul class="doc-list">
+          <li>
+            <p>
+              Template se nalazi na linku:
+              <a
+                href="https://www.overleaf.com/read/yzxzjbfjcxjx"
+                target="_blank"
+                >https://www.overleaf.com/read/yzxzjbfjcxjx</a
+              >
+            </p>
+          </li>
+          <li>
+            <p>
+              Tekst kucate između komandi
+              <code class="doc-code">\begin{document}</code> i
+              <code class="doc-code">\end{document}</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              Ako naiđete na nešto problematično, pogledajte na wiki delu
+              repo-a:
+              <a href="https://github.com/dimchee/ZDSSMO/wiki" target="_blank"
+                >https://github.com/dimchee/ZDSSMO/wiki</a
+              >
+            </p>
+          </li>
+          <li>
+            <p>
+              Dokumentaciju možete naći na sajtu Overleaf-a:
+              <a
+                href="https://www.overleaf.com/learn/latex/Commands"
+                target="_blank"
+                >https://www.overleaf.com/learn/latex/Commands</a
+              >
+            </p>
+          </li>
+          <li>
+            <p>
+              Listu simbola možete naći na sajtu OEIS-a:
+              <a
+                href="https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols"
+                target="_blank"
+                >https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols</a
+              >
+            </p>
+          </li>
+          <li>
+            <p>
+              Ovde možete nacrtati simbol ako ne znate kako se zapisuje:
+              <a
+                href="https://detexify.kirelabs.org/classify.html"
+                target="_blank"
+                >https://detexify.kirelabs.org/classify.html</a
+              >
+            </p>
+          </li>
+          <li>
+            <p>
+              Još jedan koristan sajt:
+              <a href="https://quickref.me/latex" target="_blank"
+                >https://quickref.me/latex</a
+              >
+            </p>
+          </li>
+        </ul>
+        <!-- Postavljanje otkucanog teksta -->
+        <h1 id="h-postavljanje" class="doc-title">
+          Postavljanje otkucanog teksta
+        </h1>
+        <ul class="doc-list">
+          <li>
+            <p>
+              Kada je LaTeX dokument gotov, dobro proveriti da se dokument
+              kompajlira, a onda ceo kod kopirati i zalepiti u
+              <code class="doc-code">komentar</code> zadatog Issue-a
+            </p>
+            <div>
+              <img
+                src="./src/images/uputstvo/uputstvo-github-07.png"
+                alt=""
+                class="doc-img" />
+            </div>
+          </li>
+          <li>
+            <p>
+              Sačekajte da se pojavi potvrda da je dokument uspešno
+              iskompajliran i postavljen
+            </p>
+            <div>
+              <img
+                src="./src/images/uputstvo/uputstvo-github-08.png"
+                alt=""
+                class="doc-img" />
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
