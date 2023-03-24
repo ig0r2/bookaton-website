@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bookaton</title>
-    <link rel="stylesheet" href="./src/css/main.css" />
+    <link rel="stylesheet" href="./src/css/main.css?ver=1.2" />
   </head>
   <body>
     <!-- Navbar -->
@@ -18,28 +18,35 @@
             src="https://www.pmf.ni.ac.rs/wp-content/uploads/2022/03/pmf_logo3-1-LAT.svg"
             alt="logo" />
         </a>
-        <!-- <div class="hidden space-x-3 md:flex">
+        <div class="hidden space-x-3 md:flex">
           <a
-            href="#"
-            class="rounded-full p-3 px-6 font-bold hover:bg-primary hover:text-white"
+            href="/"
+            class="rounded-full p-3 px-6 text-black underline underline-offset-4 hover:text-white"
             >Početna</a
           >
           <a
-            href="#"
-            class="rounded-full p-3 px-6 hover:bg-primary hover:text-white"
+            href="uputstvo/"
+            class="rounded-full p-3 px-6 text-black underline-offset-4 hover:text-white"
             >Uputstvo</a
           >
-          <a
-            href="#"
-            class="rounded-full p-3 px-6 hover:bg-primary hover:text-white"
-            >Kontakt</a
-          >
-        </div> -->
+        </div>
         <a
           href="https://forms.gle/eaGyoc1qka4NoAme6"
           target="_blank"
-          class="baseline rounded-full bg-primary p-3 px-6 text-white hover:bg-primaryHover"
+          class="baseline rounded-full bg-primary p-3 px-6 text-white hover:bg-primaryHover hover:text-white"
           >Prijavi se</a
+        >
+      </div>
+      <div class="flex items-center justify-center md:hidden">
+        <a
+          href="/"
+          class="rounded-full p-3 px-6 text-black underline underline-offset-4 hover:text-white"
+          >Početna</a
+        >
+        <a
+          href="uputstvo/"
+          class="rounded-full p-3 px-6 text-black underline-offset-4 hover:text-white"
+          >Uputstvo</a
         >
       </div>
     </nav>
@@ -312,13 +319,37 @@
             <!-- <p class="text-sm text-black">Student matematike</p> -->
           </div>
         </div>
+        <div class="mx-auto mt-8 max-w-6xl px-5 text-center">
+          <h3 class="font-border-l-red-50 pb-4 text-lg">U saradnji sa:</h3>
+          <div
+            class="flex flex-col items-center justify-evenly gap-2 md:flex-row">
+            <div>
+              <img
+                src="./src/images/logo-pmf-mat.png"
+                class="h-20 md:h-16"
+                alt="" />
+            </div>
+            <div>
+              <img src="./src/images/logo-niri.png" class="h-16" alt="" />
+            </div>
+            <div>
+              <img src="./src/images/logo-villy.png" class="h-16" alt="" />
+            </div>
+          </div>
+        </div>
         <!-- Button -->
-        <div class="my-16">
+        <div class="my-16 flex items-center justify-center gap-2">
           <a
             href="mailto:bookaton@pmf.ni.ac.rs"
             class="baseline rounded-full bg-primary p-3 px-6 text-white hover:bg-primaryHover"
             >Kontakt</a
           >
+          <a
+            href="https://www.instagram.com/bookaton.pmf.nis/"
+            class="baseline flex items-center gap-2 rounded-full bg-primary p-2 px-6 text-white hover:bg-primaryHover">
+            <img src="./src/images/logo-instagram.svg" class="h-8" alt="" />
+            @bookaton.pmf.nis
+          </a>
         </div>
       </div>
     </section>
