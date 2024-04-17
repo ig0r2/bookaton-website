@@ -1,11 +1,11 @@
 let slideshow = document.querySelector('#slideshow');
 let images = [
-    './src/images/books01.jpg',
-    './src/images/books02.jpg',
-    './src/images/books03.jpg',
-    './src/images/books05.jpg',
-    './src/images/books06.jpg',
-    './src/images/books07.jpg',];
+    './src/images/galerija/DSC00136-thumb.jpg',
+    './src/images/galerija/DSC00194-thumb.jpg',
+    './src/images/galerija/DSC00210-thumb.jpg',
+    './src/images/galerija/DSC00141-thumb.jpg',
+    './src/images/galerija/DSC00164-thumb.jpg',
+    './src/images/galerija/DSC00262-thumb.jpg',];
 let slideIndex = 1;
 
 setInterval(() => {

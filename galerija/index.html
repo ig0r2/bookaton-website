@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookaton</title>
+    <link rel="stylesheet" href=".././src/css/main.css?ver=1.5" />
+    <link rel="stylesheet" href=".././src/js/photoswipe/photoswipe.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet" />
+    <base href="../" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="sticky top-0 left-0 z-50 mx-auto w-full bg-primaryBright p-3 px-6 shadow-[0em_0.1em_0.75em_0.1em_gray]">
+      <div class="flex items-center justify-between">
+        <a href="https://pmf.ni.ac.rs" class="w-40 pt-2">
+          <img
+            src="https://www.pmf.ni.ac.rs/wp-content/uploads/2022/03/pmf_logo3-1-LAT.svg"
+            alt="logo" />
+        </a>
+        <div class="hidden space-x-3 md:flex">
+          <a
+            href="/"
+            class="rounded-full p-3 px-6 font-ubuntu text-black underline-offset-4 hover:text-white"
+            >Početna</a
+          >
+          <a
+            href="uputstvo/"
+            class="rounded-full p-3 px-6 text-black underline-offset-4 hover:text-white"
+            >Uputstvo</a
+          >
+          <a
+            href="galerija/"
+            class="rounded-full p-3 px-6 text-black underline underline-offset-4 hover:text-white"
+            >Galerija</a
+          >
+        </div>
+        <a
+          href="https://forms.gle/eaGyoc1qka4NoAme6"
+          target="_blank"
+          class="baseline invisible rounded-full bg-primary p-3 px-6 text-white hover:bg-primaryHover hover:text-white"
+          >Prijavi se</a
+        >
+      </div>
+      <div class="flex items-center justify-center md:hidden">
+        <a
+          href="/"
+          class="rounded-full p-3 px-6 text-black underline-offset-4 hover:text-white"
+          >Početna</a
+        >
+        <a
+          href="uputstvo/"
+          class="rounded-full p-3 px-6 text-black underline-offset-4 hover:text-white"
+          >Uputstvo</a
+        >
+        <a
+          href="galerija/"
+          class="rounded-full p-3 px-6 text-black underline underline-offset-4 hover:text-white"
+          >Galerija</a
+        >
+      </div>
+    </nav>
+    <section>
+      <!-- <div
+        class="w-100 relative h-96 overflow-hidden bg-[url('/src/images/galerija/background.jpg')] bg-contain bg-fixed bg-top bg-no-repeat"></div> -->
+      <div class="w-100">
+        <img
+          class="hidden md:block"
+          src="./src/images/galerija/background.jpg"
+          alt="" />
+        <img
+          class="md:hidden"
+          src="./src/images/galerija/background-mobile.jpg"
+          alt="" />
+      </div>
+    </section>
+    <section>
+      <h3 class="mt-10 text-center font-bebas-neue text-4xl font-bold">
+        Bookaton 2023.
+      </h3>
+      <div
+        class="container my-10 mx-auto flex flex-wrap items-center justify-center gap-4 px-2"
+        id="gallery">
+        <a
+          href="./src/images/galerija/DSC00136.jpg"
+          data-pswp-width="5570"
+          data-pswp-height="3714"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00136-thumb.jpg"
+            alt="" />
+        </a>
+        <a
+          href="./src/images/galerija/DSC00106.jpg"
+          data-pswp-width="3000"
+          data-pswp-height="2000"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00106-thumb.jpg"
+            alt="" />
+        </a>
+        <a
+          href="./src/images/galerija/DSC00114.jpg"
+          data-pswp-width="3000"
+          data-pswp-height="2000"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00114-thumb.jpg"
+            alt="" />
+        </a>
+        <a
+          href="./src/images/galerija/DSC00121.jpg"
+          data-pswp-width="3000"
+          data-pswp-height="2000"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00121-thumb.jpg"
+            alt="" />
+        </a>
+        <a
+          href="./src/images/galerija/DSC00126.jpg"
+          data-pswp-width="2000"
+          data-pswp-height="2667"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00126-thumb.jpg"
+            alt="" />
+        </a>
+        <a
+          href="./src/images/galerija/DSC00110.jpg"
+          data-pswp-width="3000"
+          data-pswp-height="2249"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00110-thumb.jpg"
+            alt="" />
+        </a>
+        <a
+          href="./src/images/galerija/DSC00141.jpg"
+          data-pswp-width="3000"
+          data-pswp-height="2000"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00141-thumb.jpg"
+            alt="" />
+        </a>
+        <a
+          href="./src/images/galerija/DSC00148.jpg"
+          data-pswp-width="3000"
+          data-pswp-height="2000"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00148-thumb.jpg"
+            alt="" />
+        </a>
+        <a
+          href="./src/images/galerija/DSC00151.jpg"
+          data-pswp-width="3000"
+          data-pswp-height="2000"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00151-thumb.jpg"
+            alt="" />
+        </a>
+        <a
+          href="./src/images/galerija/DSC00158.jpg"
+          data-pswp-width="3000"
+          data-pswp-height="2250"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00158-thumb.jpg"
+            alt="" />
+        </a>
+        <a
+          href="./src/images/galerija/DSC00164.jpg"
+          data-pswp-width="3000"
+          data-pswp-height="2000"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00164-thumb.jpg"
+            alt="" />
+        </a>
+        <a
+          href="./src/images/galerija/DSC00165.jpg"
+          data-pswp-width="3000"
+          data-pswp-height="2250"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00165-thumb.jpg"
+            alt="" />
+        </a>
+        <a
+          href="./src/images/galerija/DSC00169.jpg"
+          data-pswp-width="3000"
+          data-pswp-height="2251"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00169-thumb.jpg"
+            alt="" />
+        </a>
+        <a
+          href="./src/images/galerija/DSC00173.jpg"
+          data-pswp-width="3000"
+          data-pswp-height="2250"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00173-thumb.jpg"
+            alt="" />
+        </a>
+        <a
+          href="./src/images/galerija/DSC00162.jpg"
+          data-pswp-width="2000"
+          data-pswp-height="2666"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00162-thumb.jpg"
+            alt="" />
+        </a>
+        <a
+          href="./src/images/galerija/DSC00188.jpg"
+          data-pswp-width="3000"
+          data-pswp-height="2000"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00188-thumb.jpg"
+            alt="" />
+        </a>
+        <a
+          href="./src/images/galerija/DSC00192.jpg"
+          data-pswp-width="3000"
+          data-pswp-height="2249"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00192-thumb.jpg"
+            alt="" />
+        </a>
+        <a
+          href="./src/images/galerija/DSC00194.jpg"
+          data-pswp-width="3000"
+          data-pswp-height="2000"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00194-thumb.jpg"
+            alt="" />
+        </a>
+        <a
+          href="./src/images/galerija/DSC00198.jpg"
+          data-pswp-width="3000"
+          data-pswp-height="2000"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00198-thumb.jpg"
+            alt="" />
+        </a>
+        <a
+          href="./src/images/galerija/DSC00200.jpg"
+          data-pswp-width="3000"
+          data-pswp-height="1999"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00200-thumb.jpg"
+            alt="" />
+        </a>
+        <a
+          href="./src/images/galerija/DSC00203.jpg"
+          data-pswp-width="3000"
+          data-pswp-height="2000"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00203-thumb.jpg"
+            alt="" />
+        </a>
+        <a
+          href="./src/images/galerija/DSC00209.jpg"
+          data-pswp-width="3000"
+          data-pswp-height="2000"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00209-thumb.jpg"
+            alt="" />
+        </a>
+        <a
+          href="./src/images/galerija/DSC00210.jpg"
+          data-pswp-width="3000"
+          data-pswp-height="2000"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00210-thumb.jpg"
+            alt="" />
+        </a>
+        <a
+          href="./src/images/galerija/DSC00212.jpg"
+          data-pswp-width="3000"
+          data-pswp-height="1999"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00212-thumb.jpg"
+            alt="" />
+        </a>
+        <a
+          href="./src/images/galerija/DSC00204.jpg"
+          data-pswp-width="3000"
+          data-pswp-height="2000"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00204-thumb.jpg"
+            alt="" />
+        </a>
+        <a
+          href="./src/images/galerija/DSC00218.jpg"
+          data-pswp-width="3000"
+          data-pswp-height="2000"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00218-thumb.jpg"
+            alt="" />
+        </a>
+        <a
+          href="./src/images/galerija/DSC00216.jpg"
+          data-pswp-width="3000"
+          data-pswp-height="1999"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00216-thumb.jpg"
+            alt="" />
+        </a>
+        <a
+          href="./src/images/galerija/DSC00219.jpg"
+          data-pswp-width="3000"
+          data-pswp-height="2000"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00219-thumb.jpg"
+            alt="" />
+        </a>
+        <a
+          href="./src/images/galerija/DSC00222.jpg"
+          data-pswp-width="3000"
+          data-pswp-height="2000"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00222-thumb.jpg"
+            alt="" />
+        </a>
+        <a
+          href="./src/images/galerija/DSC00223.jpg"
+          data-pswp-width="3000"
+          data-pswp-height="2000"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00223-thumb.jpg"
+            alt="" />
+        </a>
+        <a
+          href="./src/images/galerija/DSC00225.jpg"
+          data-pswp-width="3000"
+          data-pswp-height="2001"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00225-thumb.jpg"
+            alt="" />
+        </a>
+        <a
+          href="./src/images/galerija/DSC00226.jpg"
+          data-pswp-width="3000"
+          data-pswp-height="2250"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00226-thumb.jpg"
+            alt="" />
+        </a>
+        <a
+          href="./src/images/galerija/DSC00231.jpg"
+          data-pswp-width="3000"
+          data-pswp-height="2250"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00231-thumb.jpg"
+            alt="" />
+        </a>
+        <a
+          href="./src/images/galerija/DSC00239.jpg"
+          data-pswp-width="3000"
+          data-pswp-height="2250"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00239-thumb.jpg"
+            alt="" />
+        </a>
+        <a
+          href="./src/images/galerija/DSC00248.jpg"
+          data-pswp-width="2250"
+          data-pswp-height="3000"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00248-thumb.jpg"
+            alt="" />
+        </a>
+        <a
+          href="./src/images/galerija/DSC00251.jpg"
+          data-pswp-width="2000"
+          data-pswp-height="2667"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00251-thumb.jpg"
+            alt="" />
+        </a>
+        <a
+          href="./src/images/galerija/DSC00254.jpg"
+          data-pswp-width="3000"
+          data-pswp-height="2000"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00254-thumb.jpg"
+            alt="" />
+        </a>
+        <a
+          href="./src/images/galerija/DSC00257.jpg"
+          data-pswp-width="3000"
+          data-pswp-height="2000"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00257-thumb.jpg"
+            alt="" />
+        </a>
+        <a
+          href="./src/images/galerija/DSC00261.jpg"
+          data-pswp-width="3000"
+          data-pswp-height="2000"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00261-thumb.jpg"
+            alt="" />
+        </a>
+        <a
+          href="./src/images/galerija/DSC00262.jpg"
+          data-pswp-width="3000"
+          data-pswp-height="2000"
+          data-cropped="true"
+          target="_blank">
+          <img
+            class="gallery-img"
+            src="./src/images/galerija/DSC00262-thumb.jpg"
+            alt="" />
+        </a>
+      </div>
+    </section>
+    <script type="module">
+      import PhotoSwipeLightbox from "../src/js/photoswipe/photoswipe-lightbox.esm.js";
+      import PhotoSwipe from "../src/js/photoswipe/photoswipe.esm.js";
+
+      const lightbox = new PhotoSwipeLightbox({
+        gallery: "#gallery",
+        children: "a",
+        pswpModule: PhotoSwipe,
+        wheelToZoom: true,
+      });
+
+      lightbox.init();
+    </script>
+  </body>
+</html>

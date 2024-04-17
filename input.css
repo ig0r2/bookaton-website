@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 @layer base {
   a {
@@ -10,7 +11,7 @@
 
 @layer components {
   .doc-title {
-    @apply pt-20 mb-5 text-2xl font-bold;
+    @apply mb-5 pt-20 text-2xl font-bold;
   }
   .doc-img {
     @apply my-6 rounded-lg;
@@ -23,6 +24,27 @@
   }
   .doc-list li {
     @apply mb-2;
+  }
+
+  #gallery a {
+    @apply w-full md:w-60;
+  }
+
+  .gallery-img {
+    @apply h-64 w-full cursor-pointer rounded-lg object-cover transition-all duration-300 ease-in-out md:h-40;
+  }
+
+  @media (hover: hover) {
+    .gallery-img:hover {
+      @apply scale-110 shadow-lg;
+    }
+  }
+
+  .overlay {
+    @apply fixed inset-0 z-50 hidden items-center justify-center bg-slate-400 bg-opacity-50;
+  }
+  .overlay.active {
+    @apply flex;
   }
 }
 
@@ -51,25 +73,25 @@ html {
 }
 
 .wave-divider-bottom {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
 }
 
 .wave-divider-bottom svg {
-    position: relative;
-    display: block;
-    width: calc(208% + 1.3px);
-    height: 76px;
-    transform: rotateY(180deg);
+  position: relative;
+  display: block;
+  width: calc(208% + 1.3px);
+  height: 76px;
+  transform: rotateY(180deg);
 }
 
 .wave-divider-bottom .shape-fill {
-    fill: theme("colors.white");
+  fill: theme("colors.white");
 }
 
 @keyframes fadeIn {

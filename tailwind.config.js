@@ -3,6 +3,7 @@ module.exports = {
   content: [
     './index.html',
     './uputstvo/**/*.{html,js}',
+    './galerija/**/*.{html,js}',
     './src/**/*.{html,js}',
   ],
   theme: {
@@ -18,6 +19,10 @@ module.exports = {
         primaryHover: 'hsl(21, 100%, 50%)',
         primaryLight: 'hsl(20, 43%, 62%)',
         primaryBright: 'hsl(20, 100%, 60%)'
+      },
+      fontFamily: {
+        'ubuntu': ['Ubuntu', 'sans-serif'],
+        'bebas-neue': ['Bebas Neue', 'sans-serif']
       }
     },
   },
